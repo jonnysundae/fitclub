@@ -1,10 +1,6 @@
-let status = false;
 
 function ativar() {
-    if(!status){
-         document.getElementById('Book-A-Class').classList.toggle('mostrar');
-         status = true;
-    }
+         document.getElementById('Book-A-Class').classList.add('mostrar');
 }
 
 window.addEventListener('scroll', function() {

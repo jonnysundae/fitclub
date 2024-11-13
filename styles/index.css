@@ -57,7 +57,10 @@ dialog {
     bottom: 0;
     box-sizing: border-box;
     z-index: 100;
+    display: flex;
     justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
 }
 
 dialog *{

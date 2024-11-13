@@ -38,6 +38,57 @@ body > *{
     }
 }
 
+.mostrar{
+    opacity: 1 !important;
+}
+
+/**********************/
+/******** DIALOG ******/
+/**********************/
+
+dialog {
+    position: fixed;
+    width: 100lvw;
+    max-width: 100lvw;
+    height: 5rem;
+    background: var(--segunda-cor);
+    border: 0;
+    border-top: 0.0625rem solid var(--primeira-cor);
+    bottom: 0;
+    box-sizing: border-box;
+    z-index: 100;
+    justify-content: center;
+}
+
+dialog *{
+    margin: 0rem;
+}
+
+dialog div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 5rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1000px) { 
+    dialog{
+        height: auto;
+    }
+
+    dialog div{
+        padding: 0;
+        align-items: center;
+    }
+
+    dialog h2{
+        font-size: 1rem;
+    }
+}
+
 /**********************/
 /******** MAIN ********/
 /**********************/
@@ -314,6 +365,8 @@ main::after {
         "img conteudo";
     gap: 2rem;
     align-items: stretch;
+    opacity: 0;
+    transition: opacity .5s;
 }
 
 #Book-A-Class div.imagens{

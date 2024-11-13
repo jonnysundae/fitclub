@@ -61,6 +61,7 @@ dialog {
     justify-content: center;
     opacity: 0;
     transition: opacity .5s;
+    margin: 0;
 }
 
 dialog *{
@@ -211,6 +212,17 @@ main::after {
     z-index: -1; 
 }
 
+main nav img:last-of-type {
+    display: none;
+}
+
+@media (max-width: 800px) { 
+    main {
+        max-height: auto !important;
+        height: auto !important;
+    }
+}
+
 @media (max-width: 1000px) { 
     main {
         display: grid;
@@ -237,8 +249,8 @@ main::after {
     }
 
     main nav{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
         gap: 0;
     }
 
@@ -247,14 +259,28 @@ main::after {
     }
 
     main nav ul{
+        opacity: 0;
+        transition: opacity .5s;
         margin: 0;
-        padding: 0;
+        background-color: var(--terceira-cor);
+        top: 0rem;
+        left: 0;
+        padding: 2rem;
+        width: 100lvw;
         gap: 0.5rem;
         flex-wrap: wrap;
+        flex-direction: column;
+        position: absolute;
     }
 
-    main nav img {
+    main nav img:first {
         justify-self: center;
+    }
+
+    main nav img:last-of-type {
+        justify-self: end;
+        filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(149deg) brightness(105%) contrast(108%);
+        display: flex;
     }
 }
 

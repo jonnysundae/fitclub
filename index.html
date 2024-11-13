@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <script src="js/scroll.js"></script>
     <script src="js/animacao.js"></script>
+    <script src="js/menu.js"></script>
 
     <title>FITCLUB - Best Finess In The Town!</title>
 </head>
@@ -21,7 +22,7 @@
     <main>
         <nav>
             <img src="img/logo.png" alt="Logo FitClub">
-            <ul>
+            <ul id="menu">
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -30,6 +31,7 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Community</a></li>
             </ul>
+            <img onclick="menuToggle()" id="botaoMenu" src="https://img.icons8.com/ios-filled/50/menu--v1.png" alt="Abrir/Fechar menu"/>
             <button>Join Now</button>
         </nav>
 

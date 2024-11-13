@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    /* Define as cores do projeto*/
+    --primeira-cor:#f9ac54;
+    --primeira-cor-variante: #d79447;
+    --segunda-cor: #111317;
+    --segunda-cor-variante:#1f2125;
+    --terceira-cor:#35373b;
+    --quarta-cor:#d1d5db;
+    --quinta-cor:#ffffff;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: var(--quarta-cor);
+    --border-radius: 0.4rem;
+  }
+
+  button{
+    background-color: var(--primeira-cor);
+    color: var(--quinta-cor);
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    border: none;
+  }
+
+  button:hover{
+    background-color: var(--primeira-cor-variante);
+    cursor: pointer;
+  }
+
+h1{
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    margin: 1rem 0;
+    color: var(--quinta-cor);
+}
+
+h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: var(--primeira-cor);
+}
+
+h2{
+    text-transform: uppercase;
+    color: var(--quinta-cor);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+h3{
+    color: var(--quinta-cor);
+    font-weight: 500;
+}
